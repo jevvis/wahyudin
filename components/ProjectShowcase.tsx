@@ -35,11 +35,11 @@ export default function ProjectShowcase() {
         </div>
 
         {/* Empat sistem */}
-        <p className="text-[10px] tracking-[0.3em] uppercase text-emerald-500 mb-4 font-semibold">{t('project.sys')}</p>
+        <p className="text-[10px] tracking-[0.3em] uppercase text-red-500 mb-4 font-semibold">{t('project.sys')}</p>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 mb-14">
           {SYSTEMS.map((s) => (
-            <div key={s} className="group p-6 rounded-3xl bg-[var(--card-bg)] border border-[var(--card-border)] hover:border-emerald-500/50 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 flex flex-col">
-              <span className="text-5xl font-light text-[var(--muted)] group-hover:text-emerald-500 transition-colors">{`0${s}`}</span>
+            <div key={s} className="group p-6 rounded-3xl bg-[var(--card-bg)] border border-[var(--card-border)] hover:border-red-500/50 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 flex flex-col">
+              <span className="text-5xl font-light text-[var(--muted)] group-hover:text-red-500 transition-colors">{`0${s}`}</span>
               <h3 className="text-lg font-bold mt-4 mb-2 leading-snug">{t(`project.sys.${s}.n`)}</h3>
               <p className="text-[var(--muted)] text-sm leading-relaxed mb-5 grow">{t(`project.sys.${s}.d`)}</p>
               <div className="flex flex-wrap gap-1.5 pt-4 border-t border-[var(--card-border)]/60">
@@ -83,7 +83,7 @@ export default function ProjectShowcase() {
                 onClick={() => setActive(idx)}
                 aria-label={t(`project.img.${i}.t`)}
                 className={`relative aspect-video rounded-lg overflow-hidden border transition-all duration-300 ${
-                  idx === active ? 'border-emerald-500 ring-2 ring-emerald-500/50 scale-105 shadow-md' : 'border-[var(--card-border)] opacity-70 hover:opacity-100'
+                  idx === active ? 'border-red-500 ring-2 ring-red-500/50 scale-105 shadow-md' : 'border-[var(--card-border)] opacity-70 hover:opacity-100'
                 }`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -81,15 +81,15 @@ export function EhrSimrsLogo({ className = 'w-7 h-7' }: { className?: string }) 
         <linearGradient id="ehr-screen" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
           <stop offset="0%" stopColor="#0284C7" />
           <stop offset="50%" stopColor="#0D9488" />
-          <stop offset="100%" stopColor="#059669" />
+          <stop offset="100%" stopColor="#dc2626" />
         </linearGradient>
       </defs>
       <rect x="2" y="3" width="28" height="26" rx="5" fill="url(#ehr-screen)" />
       <rect x="4.5" y="5.5" width="23" height="21" rx="3.5" fill="#0f172a" fillOpacity="0.88" />
-      <circle cx="8" cy="9.5" r="2.8" fill="#10b981" />
+      <circle cx="8" cy="9.5" r="2.8" fill="#ef4444" />
       <path d="M8 8.2v2.6M6.7 9.5h2.6" stroke="#ffffff" strokeWidth="1" strokeLinecap="round" />
       <rect x="12" y="8.5" width="9" height="1.8" rx="0.9" fill="#38BDF8" fillOpacity="0.8" />
-      <circle cx="24.5" cy="9.5" r="1.2" fill="#34d399" />
+      <circle cx="24.5" cy="9.5" r="1.2" fill="#f87171" />
       <path
         d="M5.5 16.5H9.5L11 13.5L13.5 20L15.5 15L17 17.5L18.5 16.5H26.5"
         stroke="#38BDF8"
@@ -99,8 +99,8 @@ export function EhrSimrsLogo({ className = 'w-7 h-7' }: { className?: string }) 
       />
       <rect x="7" y="21" width="7" height="1.5" rx="0.75" fill="#94A3B8" />
       <rect x="7" y="23.5" width="11" height="1.5" rx="0.75" fill="#64748B" />
-      <rect x="20.5" y="20.5" width="5" height="4.5" rx="1.5" fill="#10b981" fillOpacity="0.3" stroke="#10b981" strokeWidth="0.8" />
-      <path d="M21.8 22.8l1 1 2-2" stroke="#34d399" strokeWidth="0.9" strokeLinecap="round" strokeLinejoin="round" />
+      <rect x="20.5" y="20.5" width="5" height="4.5" rx="1.5" fill="#ef4444" fillOpacity="0.3" stroke="#ef4444" strokeWidth="0.8" />
+      <path d="M21.8 22.8l1 1 2-2" stroke="#f87171" strokeWidth="0.9" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   )
 }
@@ -173,7 +173,7 @@ export function PpcLogo({ className = 'w-7 h-7' }: { className?: string }) {
       <rect x="15" y="4.5" width="7" height="3" rx="1.5" fill="#075985" />
       <rect x="14" y="9.8" width="5.5" height="2" rx="1" fill="#0284C7" />
       <rect x="16.5" y="13.2" width="6.5" height="2" rx="1" fill="#38BDF8" />
-      <rect x="14" y="16.6" width="8" height="2" rx="1" fill="#10b981" />
+      <rect x="14" y="16.6" width="8" height="2" rx="1" fill="#ef4444" />
       <rect x="5.5" y="22.2" width="13" height="4.5" rx="1.5" fill="#ffffff" />
       <text x="12" y="25.6" fill="#075985" fontSize="3.2" fontWeight="900" textAnchor="middle" fontFamily="system-ui, -apple-system, sans-serif">
         PPC
@@ -214,8 +214,8 @@ export function LeanLogo({ className = 'w-7 h-7' }: { className?: string }) {
     <svg className={className} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="lean-grad" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#10b981" />
-          <stop offset="100%" stopColor="#047857" />
+          <stop offset="0%" stopColor="#ef4444" />
+          <stop offset="100%" stopColor="#b91c1c" />
         </linearGradient>
       </defs>
       <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#lean-grad)" />
@@ -230,7 +230,7 @@ export function LeanLogo({ className = 'w-7 h-7' }: { className?: string }) {
       />
       <circle cx="16" cy="14.5" r="2.2" fill="#FBBF24" />
       <rect x="8" y="22.2" width="16" height="4.5" rx="1.5" fill="#ffffff" />
-      <text x="16" y="25.6" fill="#047857" fontSize="3" fontWeight="900" textAnchor="middle" fontFamily="system-ui, -apple-system, sans-serif">
+      <text x="16" y="25.6" fill="#b91c1c" fontSize="3" fontWeight="900" textAnchor="middle" fontFamily="system-ui, -apple-system, sans-serif">
         LEAN
       </text>
     </svg>
@@ -357,7 +357,7 @@ export function PioLogo({ className = 'w-7 h-7' }: { className?: string }) {
 export function PtoLogo({ className = 'w-7 h-7' }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="2" y="2" width="28" height="28" rx="6" fill="#10b981" />
+      <rect x="2" y="2" width="28" height="28" rx="6" fill="#ef4444" />
       <text x="16" y="20.5" fill="#ffffff" fontSize="8" fontWeight="900" textAnchor="middle" fontFamily="system-ui, -apple-system, sans-serif">
         PTO
       </text>
@@ -401,7 +401,7 @@ export function IpcLogo({ className = 'w-7 h-7' }: { className?: string }) {
 export function MesoLogo({ className = 'w-7 h-7' }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="2" y="2" width="28" height="28" rx="6" fill="#10b981" />
+      <rect x="2" y="2" width="28" height="28" rx="6" fill="#ef4444" />
       <text x="16" y="20" fill="#ffffff" fontSize="7" fontWeight="900" textAnchor="middle" fontFamily="system-ui, -apple-system, sans-serif">
         MESO
       </text>
@@ -451,7 +451,7 @@ export function SkillsSection() {
             <TypewriterTitle text={t('skills.title')} />
           </h2>
           <p className="text-[var(--muted)] text-sm leading-relaxed mb-10 max-w-sm">
-            <span className="text-emerald-500 font-medium">{t('skills.desc').split(' ')[0]}</span>{' '}
+            <span className="text-red-500 font-medium">{t('skills.desc').split(' ')[0]}</span>{' '}
             {t('skills.desc').split(' ').slice(1).join(' ')}
           </p>
           
@@ -460,7 +460,7 @@ export function SkillsSection() {
               <div
                 key={tech.id}
                 title={tech.name}
-                className="w-12 h-12 rounded-2xl flex items-center justify-center bg-[var(--card-bg)] border border-[var(--card-border)] shadow-sm hover:scale-110 hover:border-emerald-500/50 hover:shadow-md transition-all duration-200 cursor-pointer p-1.5"
+                className="w-12 h-12 rounded-2xl flex items-center justify-center bg-[var(--card-bg)] border border-[var(--card-border)] shadow-sm hover:scale-110 hover:border-red-500/50 hover:shadow-md transition-all duration-200 cursor-pointer p-1.5"
               >
                 {tech.icon}
               </div>
@@ -581,7 +581,7 @@ function AnimatedCounter({
   return (
     <span ref={elementRef} className="tabular-nums">
       {count.toFixed(decimals)}
-      <span className="text-emerald-500 font-bold ml-0.5">{suffix}</span>
+      <span className="text-red-500 font-bold ml-0.5">{suffix}</span>
     </span>
   )
 }
@@ -603,7 +603,7 @@ export function AboutSection() {
           <line x1="6" y1="20" x2="6" y2="14" />
         </svg>
       ),
-      glow: 'rgba(16, 185, 129, 0.28)',
+      glow: 'rgba(239, 68, 68, 0.28)',
     },
     {
       id: '02',
@@ -662,7 +662,7 @@ export function AboutSection() {
   const currentTrait = traitsData[activeTraitIndex];
   const renderTraitCard = (trait: (typeof traitsData)[number], dotIdx: number, animation?: string) => (
               <div 
-                className="relative w-full min-h-[350px] bg-gradient-to-b from-zinc-800 via-zinc-900 to-zinc-950 dark:from-[#22242B] dark:via-[#1B1D23] dark:to-[#14151A] rounded-3xl border border-white/15 shadow-2xl p-6 sm:p-7 flex flex-col justify-between overflow-hidden will-change-transform transition-colors duration-300 group-hover:border-emerald-500/40"
+                className="relative w-full min-h-[350px] bg-gradient-to-b from-zinc-800 via-zinc-900 to-zinc-950 dark:from-[#22242B] dark:via-[#1B1D23] dark:to-[#14151A] rounded-3xl border border-white/15 shadow-2xl p-6 sm:p-7 flex flex-col justify-between overflow-hidden will-change-transform transition-colors duration-300 group-hover:border-red-500/40"
                 style={{
                   boxShadow: `0 20px 40px -10px ${trait.glow}, 0 10px 20px -5px rgba(0,0,0,0.5)`,
                   animation,
@@ -687,7 +687,7 @@ export function AboutSection() {
                   <h3 className="text-3xl font-extrabold text-white tracking-tight mb-1">
                     {trait.title}
                   </h3>
-                  <p className="text-xs font-semibold text-emerald-400 mb-4 tracking-wide">
+                  <p className="text-xs font-semibold text-red-400 mb-4 tracking-wide">
                     {trait.subtitle}
                   </p>
 
@@ -704,14 +704,14 @@ export function AboutSection() {
                         key={idx}
                         className={`h-1.5 rounded-full transition-all duration-300 ${
                           idx === dotIdx
-                            ? 'w-5 bg-emerald-400'
+                            ? 'w-5 bg-red-400'
                             : 'w-1.5 bg-white/20'
                         }`}
                       />
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-1 text-[10px] tracking-wider uppercase font-semibold text-white/50 group-hover:text-emerald-400 transition-colors">
+                  <div className="flex items-center gap-1 text-[10px] tracking-wider uppercase font-semibold text-white/50 group-hover:text-red-400 transition-colors">
                     <span>{t('trait.change')}</span>
                     <span className="text-xs">↻</span>
                   </div>
@@ -748,7 +748,7 @@ export function AboutSection() {
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   <h3 className="text-xl md:text-2xl font-bold tracking-wide">WAHYUDIN</h3>
-                  <svg width="20" height="20" viewBox="0 0 24 24" className="text-emerald-500 fill-current">
+                  <svg width="20" height="20" viewBox="0 0 24 24" className="text-red-500 fill-current">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
                   </svg>
                 </div>
@@ -863,23 +863,23 @@ export function AboutSection() {
 
         {/* Moto Hidup - Interactive Quote with Shimmer & Emblem */}
         <div className="mt-16 sm:mt-24 text-center max-w-4xl mx-auto px-4 relative group cursor-default">
-          <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-500 mb-6 group-hover:scale-110 group-hover:bg-emerald-500/20 group-hover:shadow-lg group-hover:shadow-emerald-500/10 transition-all duration-300 border border-emerald-500/20">
+          <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-red-500/10 text-red-500 mb-6 group-hover:scale-110 group-hover:bg-red-500/20 group-hover:shadow-lg group-hover:shadow-red-500/10 transition-all duration-300 border border-red-500/20">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
           </div>
-          <blockquote className="text-xl sm:text-2xl md:text-3xl font-serif italic tracking-wide text-[var(--foreground)] leading-relaxed group-hover:text-emerald-400 transition-colors duration-300">
+          <blockquote className="text-xl sm:text-2xl md:text-3xl font-serif italic tracking-wide text-[var(--foreground)] leading-relaxed group-hover:text-red-400 transition-colors duration-300">
             {t('about.quote')}
           </blockquote>
-          <div className="w-16 h-1 bg-gradient-to-r from-emerald-500 to-teal-400 mx-auto mt-6 rounded-full group-hover:w-36 transition-all duration-500"></div>
+          <div className="w-16 h-1 bg-gradient-to-r from-red-500 to-rose-400 mx-auto mt-6 rounded-full group-hover:w-36 transition-all duration-500"></div>
         </div>
 
         {/* Angka Kunci / Key Metrics with Animated Count-Up Counters */}
         <div className="mt-14 sm:mt-20 pt-10 border-t border-[var(--card-border)]/60 grid grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 md:gap-8 font-sans">
           {/* Item 1: IPK Profesi */}
-          <div className="group p-5 sm:p-6 rounded-3xl bg-[var(--card-bg)]/40 hover:bg-[var(--card-bg)] border border-[var(--card-border)]/50 hover:border-emerald-500/40 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
+          <div className="group p-5 sm:p-6 rounded-3xl bg-[var(--card-bg)]/40 hover:bg-[var(--card-bg)] border border-[var(--card-border)]/50 hover:border-red-500/40 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
             <div>
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[var(--foreground)] mb-2 font-sans group-hover:text-emerald-500 transition-colors duration-300">
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[var(--foreground)] mb-2 font-sans group-hover:text-red-500 transition-colors duration-300">
                 <AnimatedCounter end={2016} decimals={0} suffix="" duration={1600} />
               </div>
               <span className="text-xs sm:text-sm font-bold tracking-wider uppercase text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors block">
@@ -892,9 +892,9 @@ export function AboutSection() {
           </div>
 
           {/* Item 2: IPK S1 */}
-          <div className="group p-5 sm:p-6 rounded-3xl bg-[var(--card-bg)]/40 hover:bg-[var(--card-bg)] border border-[var(--card-border)]/50 hover:border-emerald-500/40 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
+          <div className="group p-5 sm:p-6 rounded-3xl bg-[var(--card-bg)]/40 hover:bg-[var(--card-bg)] border border-[var(--card-border)]/50 hover:border-red-500/40 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
             <div>
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[var(--foreground)] mb-2 font-sans group-hover:text-emerald-500 transition-colors duration-300">
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[var(--foreground)] mb-2 font-sans group-hover:text-red-500 transition-colors duration-300">
                 <AnimatedCounter end={8} decimals={0} suffix="" duration={1400} />
               </div>
               <span className="text-xs sm:text-sm font-bold tracking-wider uppercase text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors block">
@@ -907,9 +907,9 @@ export function AboutSection() {
           </div>
 
           {/* Item 3: Rotasi Praktik */}
-          <div className="group p-5 sm:p-6 rounded-3xl bg-[var(--card-bg)]/40 hover:bg-[var(--card-bg)] border border-[var(--card-border)]/50 hover:border-emerald-500/40 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
+          <div className="group p-5 sm:p-6 rounded-3xl bg-[var(--card-bg)]/40 hover:bg-[var(--card-bg)] border border-[var(--card-border)]/50 hover:border-red-500/40 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
             <div>
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[var(--foreground)] mb-2 font-sans group-hover:text-emerald-500 transition-colors duration-300">
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[var(--foreground)] mb-2 font-sans group-hover:text-red-500 transition-colors duration-300">
                 <AnimatedCounter end={6} decimals={0} suffix="" duration={1500} />
               </div>
               <span className="text-xs sm:text-sm font-bold tracking-wider uppercase text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors block">
@@ -922,9 +922,9 @@ export function AboutSection() {
           </div>
 
           {/* Item 4: Lisensi Resmi */}
-          <div className="group p-5 sm:p-6 rounded-3xl bg-[var(--card-bg)]/40 hover:bg-[var(--card-bg)] border border-[var(--card-border)]/50 hover:border-emerald-500/40 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
+          <div className="group p-5 sm:p-6 rounded-3xl bg-[var(--card-bg)]/40 hover:bg-[var(--card-bg)] border border-[var(--card-border)]/50 hover:border-red-500/40 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
             <div>
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[var(--foreground)] mb-2 font-sans group-hover:text-emerald-500 transition-colors duration-300">
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[var(--foreground)] mb-2 font-sans group-hover:text-red-500 transition-colors duration-300">
                 <AnimatedCounter end={3} decimals={0} suffix="" duration={1800} />
               </div>
               <span className="text-xs sm:text-sm font-bold tracking-wider uppercase text-[var(--muted)] group-hover:text-[var(--foreground)] transition-colors block">
@@ -999,7 +999,7 @@ export function EducationSection() {
                     {/* Top Bar: UI Logo + Period + GPA */}
                     <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
                       <div className="flex items-center gap-3.5">
-                        <div className="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-500 shrink-0">
+                        <div className="w-11 h-11 rounded-xl bg-red-500/10 border border-red-500/25 flex items-center justify-center text-red-500 shrink-0">
                           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M22 10 12 5 2 10l10 5 10-5z" />
                             <path d="M6 12v5c3 2.5 9 2.5 12 0v-5" />
@@ -1008,7 +1008,7 @@ export function EducationSection() {
                         </div>
                         <div>
                           <div className="flex items-center gap-2">
-                            <span className="text-[10px] font-sans tracking-widest uppercase text-emerald-500 font-semibold">
+                            <span className="text-[10px] font-sans tracking-widest uppercase text-red-500 font-semibold">
                               {edu.period}
                             </span>
                             <span className="text-xs text-[var(--muted)]">•</span>
@@ -1025,7 +1025,7 @@ export function EducationSection() {
                       {edu.gpa && (
                       <div className="text-right bg-[var(--background)] border border-[var(--card-border)] rounded-2xl px-4 py-2 shrink-0 shadow-sm">
                         <p className="text-[10px] uppercase font-sans tracking-wider text-[var(--muted)] font-semibold">{edu.gpaLabel}</p>
-                        <p className="text-xl md:text-2xl font-black font-sans text-emerald-500">{edu.gpa}</p>
+                        <p className="text-xl md:text-2xl font-black font-sans text-red-500">{edu.gpa}</p>
                       </div>
                       )}
                     </div>
@@ -1052,7 +1052,7 @@ export function EducationSection() {
                       </p>
                       {edu.highlights.map((item, hIdx) => (
                         <div key={hIdx} className="flex items-start gap-2.5 text-xs md:text-sm font-sans text-[var(--foreground)] opacity-90">
-                          <svg className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                          <svg className="w-4 h-4 text-red-500 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                           <span>{item}</span>
@@ -1066,7 +1066,7 @@ export function EducationSection() {
                     <span className="text-[10px] font-sans tracking-widest uppercase text-[var(--muted)] font-semibold">
                       {edu.footer}
                     </span>
-                    <span className="text-xs font-semibold font-sans text-emerald-500">
+                    <span className="text-xs font-semibold font-sans text-red-500">
                       {edu.status}
                     </span>
                   </div>
@@ -1089,7 +1089,7 @@ export function EducationSection() {
 
                     {/* University badge top-left */}
                     <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white text-xs font-semibold shadow-lg font-sans">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-400">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-red-400">
                         <path d="M22 10 12 5 2 10l10 5 10-5z" />
                         <path d="M6 12v5c3 2.5 9 2.5 12 0v-5" />
                         <path d="M22 10v6" />
@@ -1105,13 +1105,13 @@ export function EducationSection() {
                     )}
 
                     {/* Period pill top-right */}
-                    <div className="absolute top-4 right-4 hidden sm:inline-flex items-center px-3 py-1.5 rounded-full bg-emerald-500/90 backdrop-blur-md text-white text-[11px] font-sans font-bold shadow-lg">
+                    <div className="absolute top-4 right-4 hidden sm:inline-flex items-center px-3 py-1.5 rounded-full bg-red-500/90 backdrop-blur-md text-white text-[11px] font-sans font-bold shadow-lg">
                       {edu.period}
                     </div>
 
                     {/* Bottom caption */}
                     <div className="absolute bottom-5 left-5 right-5 text-white">
-                      <span className="text-[10px] uppercase font-sans tracking-widest text-emerald-400 font-semibold block mb-1">
+                      <span className="text-[10px] uppercase font-sans tracking-widest text-red-400 font-semibold block mb-1">
                         {edu.imageTag}
                       </span>
                       <p className="text-sm md:text-base font-bold font-sans drop-shadow-md">
@@ -1224,11 +1224,11 @@ export function AwardsSection() {
                   ) : (
                     <div className="bg-[var(--background)]">
                     <div className="aspect-[16/10] flex flex-col items-center justify-center gap-1.5 px-5 text-center bg-[var(--card-bg)]">
-                      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-500">
+                      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="text-red-500">
                         <circle cx="12" cy="9" r="6" />
                         <path d="m8.5 14.5-1.5 7 5-2.5 5 2.5-1.5-7" />
                       </svg>
-                      <span className="text-[10px] tracking-widest uppercase text-emerald-500 font-semibold">{item.category}</span>
+                      <span className="text-[10px] tracking-widest uppercase text-red-500 font-semibold">{item.category}</span>
                       <span className="text-xs sm:text-sm md:text-base font-bold leading-snug text-[var(--foreground)] line-clamp-3">{item.title}</span>
                       <span className="text-[10px] sm:text-xs text-[var(--muted)]">{item.year}</span>
                     </div>
@@ -1242,7 +1242,7 @@ export function AwardsSection() {
 
         {/* Info sertifikat aktif */}
         <div className="text-center mt-3 sm:mt-4 max-w-3xl mx-auto px-4 font-sans">
-          <p className="text-[11px] font-sans tracking-widest uppercase text-emerald-500 font-semibold mb-1.5">
+          <p className="text-[11px] font-sans tracking-widest uppercase text-red-500 font-semibold mb-1.5">
             {active.category} • {active.year}
           </p>
           <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 font-sans text-[var(--foreground)]">{active.title}</h3>
@@ -1299,7 +1299,7 @@ export function PersonalSkillsSection() {
   const softSkills = Array.from({ length: 6 }, (_, i) => ({ title: t(`personal.soft.${i + 1}.t`), desc: t(`personal.soft.${i + 1}.d`) }))
 
   const softwareSkills = [
-    { name: t('personal.sw.1.n'), Icon: PackageAreaIcon, color: 'border-emerald-500/20 bg-emerald-500/10', description: t('personal.sw.1.d') },
+    { name: t('personal.sw.1.n'), Icon: PackageAreaIcon, color: 'border-red-500/20 bg-red-500/10', description: t('personal.sw.1.d') },
     { name: t('personal.sw.2.n'), Icon: OfficeSuiteLogo, color: 'border-sky-500/20 bg-sky-500/10', description: t('personal.sw.2.d') },
   ]
 
@@ -1331,7 +1331,7 @@ export function PersonalSkillsSection() {
             <div>
               <div className="mb-8 pb-4 border-b border-[var(--card-border)]">
                 <div>
-                  <span className="text-[10px] font-sans tracking-widest uppercase text-emerald-500 font-semibold block mb-1">
+                  <span className="text-[10px] font-sans tracking-widest uppercase text-red-500 font-semibold block mb-1">
                     {t('personal.soft.label')}
                   </span>
                   <h3 className="text-2xl font-bold">{t('personal.soft.title')}</h3>
@@ -1342,7 +1342,7 @@ export function PersonalSkillsSection() {
                 {softSkills.map((skill, idx) => (
                   <div key={idx} className="p-4 rounded-2xl bg-[var(--background)] border border-[var(--card-border)] hover:border-[var(--muted)] transition-colors">
                     <div className="flex items-center gap-2 mb-1.5">
-                      <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+                      <span className="w-2 h-2 rounded-full bg-red-500 shrink-0"></span>
                       <h4 className="font-bold text-sm text-[var(--foreground)]">{skill.title}</h4>
                     </div>
                     {skill.desc && <p className="text-xs text-[var(--muted)] leading-relaxed">{skill.desc}</p>}
@@ -1353,7 +1353,7 @@ export function PersonalSkillsSection() {
 
             <div className="mt-8 pt-6 border-t border-[var(--card-border)] flex items-center justify-between text-xs text-[var(--muted)]">
               <span>{t('personal.orientation')}</span>
-              <span className="font-sans text-emerald-500 font-semibold">{t('personal.quality')}</span>
+              <span className="font-sans text-red-500 font-semibold">{t('personal.quality')}</span>
             </div>
           </div>
 
@@ -1362,7 +1362,7 @@ export function PersonalSkillsSection() {
             <div>
               <div className="mb-8 pb-4 border-b border-[var(--card-border)]">
                 <div>
-                  <span className="text-[10px] font-sans tracking-widest uppercase text-emerald-500 font-semibold block mb-1">
+                  <span className="text-[10px] font-sans tracking-widest uppercase text-red-500 font-semibold block mb-1">
                     {t('personal.hard.label')}
                   </span>
                   <h3 className="text-2xl font-bold">{t('personal.hard.title')}</h3>
@@ -1388,7 +1388,7 @@ export function PersonalSkillsSection() {
 
             <div className="mt-8 pt-6 border-t border-[var(--card-border)] flex items-center justify-between text-xs text-[var(--muted)]">
               <span>{t('personal.app')}</span>
-              <span className="font-sans text-emerald-500 font-semibold">{t('personal.ready')}</span>
+              <span className="font-sans text-red-500 font-semibold">{t('personal.ready')}</span>
             </div>
           </div>
         </div>

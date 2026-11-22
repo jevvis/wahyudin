@@ -2,7 +2,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext'
 
-const palette = ['bg-emerald-600', 'bg-blue-600', 'bg-teal-600', 'bg-indigo-600', 'bg-cyan-700', 'bg-purple-600', 'bg-amber-600', 'bg-teal-700']
+const palette = ['bg-red-600', 'bg-blue-600', 'bg-rose-600', 'bg-indigo-600', 'bg-cyan-700', 'bg-purple-600', 'bg-amber-600', 'bg-rose-700']
 const colorFor = (tech: string) => palette[tech.split('').reduce((a, c) => a + c.charCodeAt(0), 0) % palette.length]
 
 const projects = [
@@ -71,7 +71,7 @@ const projects = [
   },
   {
     number: '10',
-    title: { id: "Quality Control", en: "Quality Control" },
+    title: { id: "Quality Control (Magang)", en: "Quality Control (Internship)" },
     description: { id: "Menurunkan tingkat cacat lewat analisis dan pengawasan tiap tahap produksi.", en: "Reduced defect rates through analysis and supervision at every production stage." },
     framework: "PT TEMPO SCAN PACIFIC TBK, JUNI 2016 — JANUARI 2017",
     techStack: ["QC", "Defect"],

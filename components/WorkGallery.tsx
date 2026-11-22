@@ -148,7 +148,7 @@ export function InternshipImageStack({
                 }}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   i === activeIndex
-                    ? 'w-6 bg-emerald-500 shadow-md'
+                    ? 'w-6 bg-red-500 shadow-md'
                     : 'w-2 bg-white/50 hover:bg-white/80'
                 }`}
                 aria-label={`${t('ui.viewPhoto')} ${i + 1}`}
@@ -224,7 +224,7 @@ function Gallery({ prefix, sectionId, imageSets, showCta }: { prefix: string; se
               {/* Text Content */}
               <div className={`w-full ${item.images.length > 0 ? 'lg:w-1/2' : 'lg:w-full max-w-3xl mx-auto'} flex flex-col font-sans`}>
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-xs font-sans font-bold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
+                  <span className="text-xs font-sans font-bold px-2.5 py-1 rounded-md bg-red-500/10 text-red-500 border border-red-500/20">
                     {item.number}
                   </span>
                   <span className="text-[11px] tracking-widest text-[var(--muted)] uppercase font-sans font-semibold">
@@ -235,7 +235,7 @@ function Gallery({ prefix, sectionId, imageSets, showCta }: { prefix: string; se
                 <h3 className="text-2xl md:text-3xl font-bold text-[var(--foreground)] mb-1 font-sans">
                   {item.institution}
                 </h3>
-                <h4 className="text-lg md:text-xl font-semibold text-emerald-500 mb-2 font-sans">
+                <h4 className="text-lg md:text-xl font-semibold text-red-500 mb-2 font-sans">
                   {item.role}
                 </h4>
                 <p className="text-xs md:text-sm font-semibold text-[var(--muted)] mb-5 font-sans">
@@ -245,7 +245,7 @@ function Gallery({ prefix, sectionId, imageSets, showCta }: { prefix: string; se
                 <ul className="text-[var(--muted)] text-sm leading-relaxed mb-6 font-sans flex flex-col gap-2.5">
                   {item.description.split('|').map((b) => (
                     <li key={b} className="flex gap-2.5">
-                      <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+                      <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-red-500 shrink-0" />
                       <span>{b}</span>
                     </li>
                   ))}

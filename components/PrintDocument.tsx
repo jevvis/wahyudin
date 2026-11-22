@@ -12,11 +12,11 @@ import { siteData } from '@/lib/data'
  */
 const INK = '#0a0a0a'
 const PAPER = '#f0f0f0'
-const EM = '#10b981'
-const EMB = '#34d399'
-const EMD = '#047857'
-const EMX = '#022c22'
-const G = '#059669'
+const EM = '#ef4444'
+const EMB = '#f87171'
+const EMD = '#b91c1c'
+const EMX = '#2a0a0a'
+const G = '#dc2626'
 const MUTED = '#5c5c5c'
 const OSW = 'var(--font-oswald), Impact, sans-serif'
 
@@ -53,7 +53,7 @@ const Bleed = ({ x, w, children, style }: { x: string; w: string; children?: Rea
 )
 
 // judul raksasa ala hero situs: SVG supaya gradien memudar tercetak bersih dan lebarnya pas
-function Giant({ text, id, em, fade = 0.92, c1 = '#0cae7b' }: { text: string; id: string; em: number; fade?: number; c1?: string }) {
+function Giant({ text, id, em, fade = 0.92, c1 = '#ef4444' }: { text: string; id: string; em: number; fade?: number; c1?: string }) {
   const W = 1000
   const cap = em * 0.76
   const H = Math.round(cap + em * 0.1)
@@ -99,9 +99,9 @@ export default function PrintDocument() {
         </div>
       </div>
       <h3 style={{ fontSize: '12.5pt', fontWeight: 800, lineHeight: 1.15 }}>{t(`work.${i}.inst`)}</h3>
-      <p style={{ fontSize: '9.4pt', fontWeight: 700, color: dark ? '#a7f3d0' : G, marginTop: 3, lineHeight: 1.3 }}>{t(`work.${i}.role`)}</p>
-      <p style={{ fontSize: '8pt', fontWeight: 600, color: dark ? '#a7f3d0' : MUTED, marginTop: 1, lineHeight: 1.3 }}>{t(`work.${i}.sub`)}{t(`work.${i}.loc`) ? ` · ${t(`work.${i}.loc`)}` : ''}</p>
-      <ul style={{ marginTop: 6, paddingLeft: 11, fontSize: '8.3pt', lineHeight: 1.42, listStyle: 'square', color: dark ? '#ecfdf5' : '#222' }}>
+      <p style={{ fontSize: '9.4pt', fontWeight: 700, color: dark ? '#fecaca' : G, marginTop: 3, lineHeight: 1.3 }}>{t(`work.${i}.role`)}</p>
+      <p style={{ fontSize: '8pt', fontWeight: 600, color: dark ? '#fecaca' : MUTED, marginTop: 1, lineHeight: 1.3 }}>{t(`work.${i}.sub`)}{t(`work.${i}.loc`) ? ` · ${t(`work.${i}.loc`)}` : ''}</p>
+      <ul style={{ marginTop: 6, paddingLeft: 11, fontSize: '8.3pt', lineHeight: 1.42, listStyle: 'square', color: dark ? '#fef2f2' : '#222' }}>
         {t(`work.${i}.desc`).split('|').map((b) => <li key={b} style={{ marginBottom: 2 }}>{b}</li>)}
       </ul>
       <p style={{ fontSize: '7.6pt', fontWeight: 700, lineHeight: 1.45, marginTop: 6, color: dark ? EMB : G }}>{t(`work.${i}.tags`).split('|').join('  ·  ')}</p>
@@ -109,13 +109,13 @@ export default function PrintDocument() {
   )
 
   const WorkPage = ({ n, from, count = 3, bg, dark, z = 1 }: { n: number; from: number; count?: number; bg: string; dark: boolean; z?: number }) => (
-    <Page n={n} bg={bg} color={dark ? '#fff' : INK} waves={dark ? { c: '#6ee7b7', o: 0.14 } : { c: '#0a0a0a', o: 0.07 }} footer={dark ? '#6ee7b7' : MUTED}>
+    <Page n={n} bg={bg} color={dark ? '#fff' : INK} waves={dark ? { c: '#fca5a5', o: 0.14 } : { c: '#0a0a0a', o: 0.07 }} footer={dark ? '#fca5a5' : MUTED}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
         <div>
           <Label c={dark ? EMB : G}>{t('work.label')}</Label>
           <h2 style={{ fontFamily: OSW, fontSize: '28pt', fontWeight: 700, lineHeight: 1.02, textTransform: 'uppercase', marginTop: 3 }}>{t('work.title')}</h2>
         </div>
-        <p style={{ fontSize: '8.4pt', lineHeight: 1.5, maxWidth: '86mm', color: dark ? '#d1fae5' : '#444', marginBottom: 2 }}>{t('work.subtitle')}</p>
+        <p style={{ fontSize: '8.4pt', lineHeight: 1.5, maxWidth: '86mm', color: dark ? '#fee2e2' : '#444', marginBottom: 2 }}>{t('work.subtitle')}</p>
         <Outline size="42pt" color={dark ? EMB : EM}>{String(from).padStart(2, '0')}–{String(from + count - 1).padStart(2, '0')}</Outline>
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: `repeat(${count}, 1fr)`, gap: count === 4 ? '6mm' : '8mm', marginTop: '7mm', zoom: z } as CSSProperties}>
@@ -128,7 +128,7 @@ export default function PrintDocument() {
     <div className="print-doc" aria-hidden="true">
       {/* 1. Sampul */}
       <Page n={1} bg={INK} color="#fff" waves={{ c: EM, o: 0.18 }} footer="#8a8a8a">
-        <div style={{ position: 'absolute', left: '50%', bottom: '-30mm', width: '170mm', height: '170mm', transform: 'translateX(-50%)', borderRadius: '50%', background: 'radial-gradient(circle, rgba(16,185,129,.62) 0%, rgba(16,185,129,.18) 48%, rgba(16,185,129,0) 70%)' }} />
+        <div style={{ position: 'absolute', left: '50%', bottom: '-30mm', width: '170mm', height: '170mm', transform: 'translateX(-50%)', borderRadius: '50%', background: 'radial-gradient(circle, rgba(239, 68, 68,.62) 0%, rgba(239, 68, 68,.18) 48%, rgba(239, 68, 68,0) 70%)' }} />
         <div style={{ position: 'relative', height: '100%' }}>
           <p style={{ position: 'absolute', top: 0, left: 0, fontSize: 8, letterSpacing: '0.3em', fontWeight: 700, color: EMB }}>{t('hero.based1')} · {t('hero.based2')}</p>
           <p style={{ position: 'absolute', top: 0, right: 0, fontSize: 8, letterSpacing: '0.3em', fontWeight: 700, color: '#bdbdbd' }}>2026</p>
@@ -206,9 +206,9 @@ export default function PrintDocument() {
             <Outline size="60pt" color={EMB}>01</Outline>
             <p style={{ fontFamily: OSW, fontSize: '26pt', fontWeight: 600, color: EMB, lineHeight: 1, marginTop: '5mm' }}>{dash(t('education.1.period'))}</p>
             <h3 style={{ fontFamily: OSW, fontSize: '22pt', fontWeight: 700, lineHeight: 1.05, textTransform: 'uppercase', marginTop: 9 }}>{t('education.1.institution')}</h3>
-            <p style={{ fontSize: '13pt', fontWeight: 700, color: '#d1fae5', marginTop: 6 }}>{t('education.1.program')}</p>
+            <p style={{ fontSize: '13pt', fontWeight: 700, color: '#fee2e2', marginTop: 6 }}>{t('education.1.program')}</p>
             <p style={{ fontSize: '10.4pt', lineHeight: 1.55, marginTop: 8, color: '#e5e5e5', maxWidth: '120mm' }}>{t('education.1.desc')}</p>
-            <p style={{ fontSize: 7, letterSpacing: '0.16em', fontWeight: 800, color: '#6ee7b7', marginTop: 10 }}>{t('education.1.footer')}</p>
+            <p style={{ fontSize: 7, letterSpacing: '0.16em', fontWeight: 800, color: '#fca5a5', marginTop: 10 }}>{t('education.1.footer')}</p>
           </div>
           <div style={{ marginTop: '14mm' }}>
             <Label c={EMB}>{t('about.current.label')}</Label>
@@ -216,7 +216,7 @@ export default function PrintDocument() {
               {[1, 2, 3].map((i) => (
                 <div key={i} style={{ borderTop: '1px solid rgba(255,255,255,.28)', paddingTop: 4 }}>
                   <p style={{ fontSize: '10.4pt', fontWeight: 800, lineHeight: 1.2 }}>{t(`about.current.${i}.title`)}</p>
-                  <p style={{ fontSize: '8.6pt', color: '#a7f3d0', marginTop: 2 }}>{t(`about.current.${i}.sub`)}</p>
+                  <p style={{ fontSize: '8.6pt', color: '#fecaca', marginTop: 2 }}>{t(`about.current.${i}.sub`)}</p>
                 </div>
               ))}
             </div>
@@ -259,7 +259,7 @@ export default function PrintDocument() {
         </div>
       </Page>
 
-      <Page n={8} bg={`linear-gradient(160deg, ${EMD} 0%, ${EMX} 100%)`} color="#fff" waves={{ c: '#6ee7b7', o: 0.14 }} footer="#6ee7b7">
+      <Page n={8} bg={`linear-gradient(160deg, ${EMD} 0%, ${EMX} 100%)`} color="#fff" waves={{ c: '#fca5a5', o: 0.14 }} footer="#fca5a5">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
           <div>
             <Label c={EMB}>{t('project.label')}</Label>
@@ -272,13 +272,13 @@ export default function PrintDocument() {
             <div key={i}>
               <Photo src={`/galeri/proj-${i}.jpg`} h="56mm" fit="contain" style={{ background: '#161616', borderRadius: '4mm', border: '1px solid rgba(255,255,255,.3)' }} />
               <p style={{ fontSize: '9.4pt', fontWeight: 800, marginTop: 4 }}>{t(`project.img.${i}.t`)}</p>
-              <p style={{ fontSize: '8pt', lineHeight: 1.4, color: '#d1fae5', marginTop: 1 }}>{t(`project.img.${i}.c`)}</p>
+              <p style={{ fontSize: '8pt', lineHeight: 1.4, color: '#fee2e2', marginTop: 1 }}>{t(`project.img.${i}.c`)}</p>
             </div>
           ))}
           <div style={{ border: `1px solid ${EMB}`, borderRadius: '4mm', padding: '6mm', alignSelf: 'stretch', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <Label c={EMB}>{t('project.label')}</Label>
             <p style={{ fontFamily: OSW, fontSize: '19pt', fontWeight: 700, lineHeight: 1.1, textTransform: 'uppercase', marginTop: 4 }}>{t('project.title')}</p>
-            <p style={{ fontSize: '8.8pt', lineHeight: 1.5, marginTop: 6, color: '#ecfdf5' }}>{t('project.note')}</p>
+            <p style={{ fontSize: '8.8pt', lineHeight: 1.5, marginTop: 6, color: '#fef2f2' }}>{t('project.note')}</p>
           </div>
         </div>
       </Page>
@@ -314,13 +314,13 @@ export default function PrintDocument() {
       </Page>
 
       {/* 10. Sertifikat */}
-      <Page n={10} bg={`linear-gradient(160deg, ${EMD} 0%, ${EMX} 100%)`} color="#fff" waves={{ c: '#6ee7b7', o: 0.14 }} footer="#6ee7b7">
+      <Page n={10} bg={`linear-gradient(160deg, ${EMD} 0%, ${EMX} 100%)`} color="#fff" waves={{ c: '#fca5a5', o: 0.14 }} footer="#fca5a5">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
           <div>
             <Label c={EMB}>{t('awards.label')}</Label>
             <h2 style={{ fontFamily: OSW, fontSize: '28pt', fontWeight: 700, lineHeight: 1.02, textTransform: 'uppercase', marginTop: 3 }}>{t('awards.title')}</h2>
           </div>
-          <p style={{ fontSize: '8.6pt', color: '#d1fae5', maxWidth: '96mm', lineHeight: 1.5, textAlign: 'right' }}>{t('awards.sub')}</p>
+          <p style={{ fontSize: '8.6pt', color: '#fee2e2', maxWidth: '96mm', lineHeight: 1.5, textAlign: 'right' }}>{t('awards.sub')}</p>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '7mm 9mm', marginTop: '6mm' }}>
           {[1, 2, 3, 4, 5, 6].map((i) => (
@@ -330,8 +330,8 @@ export default function PrintDocument() {
               </div>
               <p style={{ fontSize: 6.8, letterSpacing: '0.14em', fontWeight: 800, color: EMB, marginTop: 9 }}>{t(`award.${i}.cat`)} · {t(`award.${i}.year`)}</p>
               <h3 style={{ fontSize: '9.8pt', fontWeight: 800, lineHeight: 1.25, marginTop: 2 }}>{t(`award.${i}.title`)}</h3>
-              <p style={{ fontSize: '8pt', fontWeight: 700, color: '#a7f3d0', marginTop: 2, lineHeight: 1.3 }}>{t(`award.${i}.issuer`)}</p>
-              <p style={{ fontSize: '8pt', lineHeight: 1.38, color: '#ecfdf5', marginTop: 2 }}>{t(`award.${i}.desc`)}</p>
+              <p style={{ fontSize: '8pt', fontWeight: 700, color: '#fecaca', marginTop: 2, lineHeight: 1.3 }}>{t(`award.${i}.issuer`)}</p>
+              <p style={{ fontSize: '8pt', lineHeight: 1.38, color: '#fef2f2', marginTop: 2 }}>{t(`award.${i}.desc`)}</p>
             </div>
           ))}
         </div>
@@ -382,7 +382,7 @@ export default function PrintDocument() {
 
       {/* 12. Kontak */}
       <Page n={12} bg={INK} color="#fff" waves={{ c: EM, o: 0.18 }} footer="#8a8a8a">
-        <div style={{ position: 'absolute', right: '-10mm', bottom: '-34mm', width: '150mm', height: '150mm', borderRadius: '50%', background: 'radial-gradient(circle, rgba(16,185,129,.6) 0%, rgba(16,185,129,.16) 50%, rgba(16,185,129,0) 70%)' }} />
+        <div style={{ position: 'absolute', right: '-10mm', bottom: '-34mm', width: '150mm', height: '150mm', borderRadius: '50%', background: 'radial-gradient(circle, rgba(239, 68, 68,.6) 0%, rgba(239, 68, 68,.16) 50%, rgba(239, 68, 68,0) 70%)' }} />
         <div style={{ position: 'relative', height: '100%' }}>
           <Label c={EMB}>{t('contact.label')}</Label>
           <div style={{ width: '236mm', marginTop: 6 }}><Giant text={t('contact.title').toUpperCase()} id="gct" em={165} fade={1} c1={EMB} /></div>
